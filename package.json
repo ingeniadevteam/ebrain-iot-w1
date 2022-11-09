@@ -1,0 +1,15 @@
+{
+  "name": "@clysema/ebrain-iot-w1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "load-json-file": "^6.2.0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
