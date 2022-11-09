@@ -10,6 +10,10 @@
     "load-json-file": "^6.2.0"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "author": "Víctor Navarro <v.navarro@camposcorporacion.com>",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ingeniadevteam/ebrain-iot-w1.git"
+  }
 }
