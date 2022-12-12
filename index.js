@@ -31,6 +31,12 @@ module.exports = async (app) => {
         const devData = await loadJsonFile(`devdata/w1.json`);
         if (devData) app.w1.data = devData;
     } else {
-        app.w1.data = await app.w1.module.read(app);
+        app.w1.data = {};
+        const data = await app.w1.module.read(app);
+        for (const id of Object.keys(data)) {
+            if (app.w1.config.hasOwnProperty(id)) {
+                app.w1.data[app.w1.config[id]] = data[id];
+            }
+        }
     }
 };
